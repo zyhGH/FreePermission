@@ -1,4 +1,4 @@
-package com.zyh.freepermission
+package com.zyh.permission
 
 import android.content.Context
 import android.content.Intent
@@ -46,9 +46,16 @@ object PermissionUtils {
     }
 
     fun checkHavePermission(context: Context?, permissionMode: Int, listener: PermissionListener) {
-        when (checkHavePermission(context, permissionMode)) {
+        when (checkHavePermission(
+            context,
+            permissionMode
+        )) {
             true -> listener.onSuccess()
-            else -> requestPermission(context, permissionMode, listener)
+            else -> requestPermission(
+                context,
+                permissionMode,
+                listener
+            )
         }
     }
 
@@ -74,7 +81,9 @@ object PermissionUtils {
                             )
                             .setTitle(context.getString(R.string.notif))
                             .setPositiveButton(context.getString(R.string.common_ok)) { dialog, _ ->
-                                doSomething(context)
+                                doSomething(
+                                    context
+                                )
                                 dialog.dismiss()
                             }
                             .setNegativeButton(
@@ -106,7 +115,9 @@ object PermissionUtils {
                             )
                             .setTitle(context.getString(R.string.notif))
                             .setPositiveButton(context.getString(R.string.common_ok)) { dialog, _ ->
-                                doSomething(context)
+                                doSomething(
+                                    context
+                                )
                                 dialog.dismiss()
                             }
                             .setNegativeButton(
@@ -137,7 +148,9 @@ object PermissionUtils {
                             )
                             .setTitle(context.getString(R.string.notif))
                             .setPositiveButton(context.getString(R.string.common_ok)) { dialog, _ ->
-                                doSomething(context)
+                                doSomething(
+                                    context
+                                )
                                 dialog.dismiss()
                             }
                             .setNegativeButton(
@@ -170,7 +183,9 @@ object PermissionUtils {
                             )
                             .setTitle(context.getString(R.string.notif))
                             .setPositiveButton(context.getString(R.string.common_ok)) { dialog, _ ->
-                                doSomething(context)
+                                doSomething(
+                                    context
+                                )
                                 listener.onFail()
                                 dialog.dismiss()
                             }
@@ -203,7 +218,9 @@ object PermissionUtils {
                             )
                             .setTitle(context.getString(R.string.notif))
                             .setPositiveButton(context.getString(R.string.common_ok)) { dialog, _ ->
-                                doSomething(context)
+                                doSomething(
+                                    context
+                                )
                                 dialog.dismiss()
                             }
                             .setNegativeButton(

@@ -1,4 +1,4 @@
-package com.zyh.freepermission
+package com.zyh.permission
 
 import android.app.Activity
 

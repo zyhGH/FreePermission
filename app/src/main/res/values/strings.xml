@@ -1,9 +1,3 @@
 <resources>
     <string name="app_name">FreePermission</string>
-
-    <string name="chat_permission1">您未授权</string>
-    <string name="chat_permission2">权限, 请在权限管理中开启此权限。</string>
-    <string name="notif">提示</string>
-    <string name="common_ok">确定</string>
-    <string name="common_cancel">取消</string>
 </resources>

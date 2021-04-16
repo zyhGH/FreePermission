@@ -63,7 +63,7 @@ public class PermissionProcessor extends AbstractProcessor {
                 String statement = String.format("activity.findViewById(%d).setOnClickListener(new android.view.View.OnClickListener() {" +
                         "\n @Override" +
                         "\n public void onClick(android.view.View v) {" +
-                        "\n PermissionUtils.INSTANCE.checkHavePermission(activity, %s, new PermissionUtils.PermissionListener() {" +
+                        "\n com.zyh.permission.PermissionUtils.INSTANCE.checkHavePermission(activity, %s, new com.zyh.permission.PermissionUtils.PermissionListener() {" +
                         "\n     @Override" +
                         "\n     public void onSuccess() {" +
                         "\n         activity.onClick();" +
