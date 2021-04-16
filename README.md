@@ -43,3 +43,5 @@ permissionClickListener的实现如下
        }
        setOnClickListener(clickListener)
     }
+
+获取权限用的是https://github.com/yanzhenjie/AndPermission
